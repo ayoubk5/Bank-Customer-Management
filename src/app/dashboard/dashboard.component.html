@@ -1,0 +1,15 @@
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4 py-6">
+  <div class="bg-blue-500 text-white p-6 rounded-md shadow-lg flex flex-col items-center">
+    <span class="text-4xl mb-2 flex items-center">
+      Total Customers
+    </span>
+    <p class="text-5xl font-bold">{{ totalCustomers }}</p>
+  </div>
+  <div class="bg-green-500 text-white p-6 rounded-md shadow-lg flex flex-col items-center">
+    <span class="text-4xl mb-2 flex items-center">
+      <svg class="w-12 h-12 mr-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+      Total Balance
+    </span>
+    <p class="text-5xl font-bold">{{ totalAmount | currency }}</p>
+  </div>
+</div>

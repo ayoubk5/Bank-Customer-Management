@@ -1,0 +1,16 @@
+<div class="col-span-1 flex flex-col text-center border shadow rounded-md p-4 h-full">
+    <div class="p-4">
+    <img src='../../assets/images/bank-icon-vector-sign-symbol-isolated-white-background-bank-logo-concept-bank-icon-vector-isolated-white-background-134167171-removebg-preview (1).png' alt="Customer Image" class="flex w-12 h-12 rounded-full mx-auto ">
+      <h3 class="font-bold text-xl"> {{customer?.firstName}} {{customer?.lastName}}</h3>
+      <p class="text-gray-700">Email: {{customer?.email}}</p>
+      <p class="text-gray-700">Gender: {{customer?.gender}}</p>
+      <p class="text-gray-700">Adress: {{customer?.address}}</p>
+      <p class="text-gray-700">Account Type: {{customer?.accountType}}</p>
+      <p class="text-gray-700">Balance: {{customer?.balance |currency}} </p>
+    </div>
+    <div class="px-2 space-x-10 py-2 bg-gray-100">
+      <button routerLink={{customer?.id}} class=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" >Edit</button>
+      <button class=" bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" (click)="deleteCustomer()">Delete</button>
+    </div>
+  </div>
+  
